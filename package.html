@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Travel Packages</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+
+.navbar{
+    background:#0f172a !important;
+    padding:8px 0;
+}
+
+.logo{
+    width:200px;
+    height:50px;
+    object-fit:cover;
+}
+
+.navbar-brand{
+    color:#38bdf8 !important;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.price-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff9800;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn-custom {
+    border-radius: 25px;
+}
+</style>
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <img src="img/logo.svg" class="logo me-2" alt="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="trip.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="Trips.html">Trips</a></li>
+        <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-5">
+    <h2 class="section-title">🌍 Explore Our Travel Packages</h2>
+
+    <div class="row g-4">
+
+        <!-- Repeatable Card -->
+        
+        <!-- 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹85k</span>
+                <img src="img/paris tour.jpg">
+                <div class="card-body text-dark">
+                    <h5>Paris</h5>
+                    <p>5 Days Romantic Tour</p>
+                    <a href="desparis.html" class="btn btn-primary btn-custom w-100">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹1.2L</span>
+                <img src="img/maldives.jpg">
+                <div class="card-body text-dark">
+                    <h5>Maldives</h5>
+                    <p>Luxury Beach Stay</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹25k</span>
+                <img src="img/manali.jpg">
+                <div class="card-body text-dark">
+                    <h5>Manali</h5>
+                    <p>Snow Adventure</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹45k</span>
+                <img src="img/dubai.jpg">
+                <div class="card-body text-dark">
+                    <h5>Dubai</h5>
+                    <p>City & Desert Safari</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹30k</span>
+                <img src="img/goa_beach.png.jpeg">
+                <div class="card-body text-dark">
+                    <h5>Goa</h5>
+                    <p>Beach Party Trip</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹50k</span>
+                <img src="img/switzerland.jpg">
+                <div class="card-body text-dark">
+                    <h5>Switzerland</h5>
+                    <p>Luxury Mountains</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹40k</span>
+                <img src="img/bali.jpg">
+                <div class="card-body text-dark">
+                    <h5>Bali</h5>
+                    <p>Island Retreat</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹35k</span>
+                <img src="img/kerala.jpg">
+                <div class="card-body text-dark">
+                    <h5>Kerala</h5>
+                    <p>Backwater Tour</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹55k</span>
+                <img src="https://source.unsplash.com/400x300/?singapore">
+                <div class="card-body text-dark">
+                    <h5>Singapore</h5>
+                    <p>City Lights</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹60k</span>
+                <img src="https://source.unsplash.com/400x300/?thailand">
+                <div class="card-body text-dark">
+                    <h5>Thailand</h5>
+                    <p>Beach + Nightlife</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹20k</span>
+                <img src="https://source.unsplash.com/400x300/?jaipur">
+                <div class="card-body text-dark">
+                    <h5>Jaipur</h5>
+                    <p>Royal Heritage</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹22k</span>
+                <img src="https://source.unsplash.com/400x300/?agra">
+                <div class="card-body text-dark">
+                    <h5>Agra</h5>
+                    <p>Taj Mahal Visit</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹28k</span>
+                <img src="https://source.unsplash.com/400x300/?ladakh">
+                <div class="card-body text-dark">
+                    <h5>Ladakh</h5>
+                    <p>Bike Adventure</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹75k</span>
+                <img src="https://source.unsplash.com/400x300/?london">
+                <div class="card-body text-dark">
+                    <h5>London</h5>
+                    <p>City Tour</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹90k</span>
+                <img src="https://source.unsplash.com/400x300/?newyork">
+                <div class="card-body text-dark">
+                    <h5>New York</h5>
+                    <p>Urban Experience</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹35k</span>
+                <img src="https://source.unsplash.com/400x300/?shimla">
+                <div class="card-body text-dark">
+                    <h5>Shimla</h5>
+                    <p>Hill Station</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹32k</span>
+                <img src="https://source.unsplash.com/400x300/?ooty">
+                <div class="card-body text-dark">
+                    <h5>Ooty</h5>
+                    <p>Nature Escape</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹45k</span>
+                <img src="https://source.unsplash.com/400x300/?kashmir">
+                <div class="card-body text-dark">
+                    <h5>Kashmir</h5>
+                    <p>Paradise on Earth</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹65k</span>
+                <img src="https://source.unsplash.com/400x300/?tokyo">
+                <div class="card-body text-dark">
+                    <h5>Tokyo</h5>
+                    <p>Modern Culture</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="col-md-3">
+            <div class="card">
+                <span class="price-badge">₹70k</span>
+                <img src="https://source.unsplash.com/400x300/?rome">
+                <div class="card-body text-dark">
+                    <h5>Rome</h5>
+                    <p>Historic Journey</p>
+                    <a href="#" class="btn btn-primary w-100 btn-custom">View Details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

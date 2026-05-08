@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Destinations</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar{
+    background:#0f172a !important;
+    padding:8px 0;
+}
+
+.logo{
+    width:200px;
+    height:50px;
+    object-fit:cover;
+}
+
+.navbar-brand{
+    color:#38bdf8 !important;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+}
+
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container">
+
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.svg" class="logo me-2" alt="logo">
+    
+    </a>
+
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="trip.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="Trips.html">Trips</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="destination.html">Destinations</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="package.html">Packages</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</nav>
+
+<!-- Destinations Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Popular Destinations</h2>
+
+    <div class="row g-4">
+
+        <!-- Destination 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/paris tour.jpg" class="card-img-top" alt="Paris">
+                <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">Explore the city of love, Eiffel Tower and beautiful streets.</p>
+                    <a href="desparis.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/maldives.jpg" class="card-img-top" alt="Maldives">
+                <div class="card-body">
+                    <h5 class="card-title">Maldives</h5>
+                    <p class="card-text">Enjoy crystal clear water, beaches and luxury resorts.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/dubai.jpg" class="card-img-top" alt="Dubai">
+                <div class="card-body">
+                    <h5 class="card-title">Dubai</h5>
+                    <p class="card-text">Experience modern architecture, shopping and desert safari.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 4 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/goa_beach.png.jpeg" class="card-img-top" alt="Goa">
+                <div class="card-body">
+                    <h5 class="card-title">Goa</h5>
+                    <p class="card-text">Relax at beaches, enjoy nightlife and seafood.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 5 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/switzerland.jpg" class="card-img-top" alt="Switzerland">
+                <div class="card-body">
+                    <h5 class="card-title">Switzerland</h5>
+                    <p class="card-text">Snowy mountains, scenic views and peaceful environment.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 6 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/bali.jpg" class="card-img-top" alt="Bali">
+                <div class="card-body">
+                    <h5 class="card-title">Bali</h5>
+                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>© 2026 TravelWorld | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

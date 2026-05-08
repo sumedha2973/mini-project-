@@ -1,0 +1,22 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Circle Background -->
+  <circle cx="30" cy="30" r="25" fill="url(#grad)"></circle>
+
+  <!-- Airplane Icon -->
+  <text x="18" y="38" font-size="20" fill="white">✈</text>
+
+  <!-- Text -->
+  <text x="70" y="35" font-size="22" font-family="Arial" fill="white" font-weight="bold">
+    Trip Nova
+  </text>
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="purple"></stop>
+      <stop offset="100%" stop-color="pink"></stop>
+    </linearGradient>
+  </defs>
+
+</svg>
