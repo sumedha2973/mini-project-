@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background: #0f172a !important;
+            padding: 12px 0;
+        }
+        .logo {
+            width: 200px;
+            height: 50px;
+            object-fit: cover;
+        }
+        .nav-link {
+            color: white !important;
+            margin-left: 15px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #38bdf8 !important;
+        }
+        /* Optimized sleek banner height for laptops with an elegant dark overlay */
+        .hero {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('img/ladakh.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            background-repeat: no-repeat;
+            height: 30vh;
+            color: white;
+        }
+        .special-trips-section {
+            background-color: rgb(238, 233, 226);
+            padding-bottom: 60px;
+        }
+        .trip-card {
+            transition: 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+        }
+        .trip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+        .price {
+            color: #6a11cb;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .btn-custom {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            opacity: 0.9;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="trip.html">
+            <img src="img/logo.svg" class="logo" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Trips.html">Trips</a></li>
+                <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Welcome Section -->
+<section class="hero d-flex align-items-center text-center">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Find Your Next Adventure</h1>
+        <p class="lead mb-0">Discover beautifully curated deals around the globe</p>
+    </div>
+</section>
+
+<!-- Featured Special Trips Section -->
+<section class="special-trips-section">
+    <div class="container pt-5">
+        <h2 class="fw-bold text-center mb-2">Featured Special Trips</h2>
+        <p class="text-muted text-center mb-5">Exclusive curated trips handpicked for a unique experience</p>
+        
+        <div class="row g-4 px-2">
+            <!-- Goa Beach -->
+            <div class="col-md-4">
+                <div class="card trip-card shadow-sm">
+                    <img src="img/goa_beach.png.jpeg" class="card-img-top" style="height:220px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Goa Beach</h5>
+                            <p class="text-muted">3 Days | Hotel + Beach Party</p>
+                        </div>
+                        <div class="mt-3">
+                            <p class="price mb-2">₹15,000</p>
+                            <button class="btn btn-custom w-100 py-2" onclick="window.location.href='book.html?trip=Goa%20Beach&price=₹15,000'">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ladakh Ride -->
+            <div class="col-md-4">
+                <div class="card trip-card shadow-sm">
+                    <img src="img/ladakh.jpg" class="card-img-top" style="height:220px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Ladakh Ride</h5>
+                            <p class="text-muted">7 Days | Bike Trip + Mountains</p>
+                        </div>
+                        <div class="mt-3">
+                            <p class="price mb-2">₹28,000</p>
+                            <button class="btn btn-custom w-100 py-2" onclick="window.location.href='book.html?trip=Ladakh%20Ride&price=₹28,000'">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Switzerland -->
+            <div class="col-md-4">
+                <div class="card trip-card shadow-sm">
+                    <img src="img/switzerland.jpg" class="card-img-top" style="height:220px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Switzerland</h5>
+                            <p class="text-muted">6 Days | Mountains + Train Tour</p>
+                        </div>
+                        <div class="mt-3">
+                            <p class="price mb-2">₹1,20,000</p>
+                            <button class="btn btn-custom w-100 py-2" onclick="window.location.href='book.html?trip=Switzerland&price=₹1,20,000'">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bali Trip -->
+            <div class="col-md-4">
+                <div class="card trip-card shadow-sm">
+                    <img src="img/bali.jpg" class="card-img-top" style="height:220px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Bali Trip</h5>
+                            <p class="text-muted">5 Days | Beach + Culture</p>
+                        </div>
+                        <div class="mt-3">
+                            <p class="price mb-2">₹65,000</p>
+                            <button class="btn btn-custom w-100 py-2" onclick="window.location.href='book.html?trip=Bali%20Trip&price=₹65,000'">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dubai Tour -->
+            <div class="col-md-4">
+                <div class="card trip-card shadow-sm">
+                    <img src="img/dubai.jpg" class="card-img-top" style="height:220px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Dubai Tour</h5>
+                            <p class="text-muted">4 Days | Desert Safari + City Tour</p>
+                        </div>
+                        <div class="mt-3">
+                            <p class="price mb-2">₹55,000</p>
+                            <button class="btn btn-custom w-100 py-2" onclick="window.location.href='book.html?trip=Dubai%20Tour&price=₹55,000'">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manali Adventure -->
+            <div class="col-md-4">
+                <div class="card trip-card shadow-sm">
+                    <img src="img/manali.jpg" class="card-img-top" style="height:220px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold">Manali Adventure</h5>
+                            <p class="text-muted">5 Days | Snow + Trekking</p>
+                        </div>
+                        <div class="mt-3">
+                            <p class="price mb-2">₹18,000</p>
+                            <button class="btn btn-custom w-100 py-2" onclick="window.location.href='book.html?trip=Manali%20Adventure&price=₹18,000'">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<!-- Customer Experience / Testimonials Section -->
+<section class="bg-light py-5 border-top">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-2">What Our Travelers Say</h2>
+        <p class="text-muted text-center mb-5">Real stories from real adventurers who explored the world with us</p>
+        
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="text-warning mb-3">★★★★★</div>
+                    <p class="text-muted italic">"The Ladakh bike trip was completely flawless. From the bikes to the stays, everything was managed perfectly. Highly recommend!"</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="fw-bold text-dark">Rohan Sharma</div>
+                        <span class="text-muted ms-2 fs-7">| Bullet Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="text-warning mb-3">★★★★★</div>
+                    <p class="text-muted italic">"Booking our Switzerland honeymoon was incredibly easy. No hidden costs, beautiful itinerary, and excellent customer service."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="fw-bold text-dark">Ananya Iyer</div>
+                        <span class="text-muted ms-2 fs-7">| Luxury Traveler</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4">
+                    <div class="text-warning mb-3">★★★★★</div>
+                    <p class="text-muted italic">"Goa beach party package was worth every rupee! The hotel was right on the beach and the crowd was amazing."</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="fw-bold text-dark">Vikram Malhotra</div>
+                        <span class="text-muted ms-2 fs-7">| Party Planner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer with Creator Attribution -->
+<!-- Footer with Creator Attribution -->
+<footer class="text-center text-white py-4" style="background:#0f172a;">
+    <div class="container">
+        <p class="mb-1">© 2026 Travel Explorer | All Rights Reserved</p>
+        <p class="mb-0 text-muted fs-7">
+            Designed & Developed with ❤️ by 
+            <span class="text-info fw-semibold">Sumedha</span> & 
+            <span class="text-info fw-semibold">Sakshi Chauhan</span>
+        </p>
+    </div>
+</footer>

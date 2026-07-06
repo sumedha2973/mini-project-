@@ -12,38 +12,66 @@
         body {
             background-color: #f8f9fa;
         }
+        /* Destination Hero Banner Styling */
+.dest-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), 
+                url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?fm=jpg&q=80&w=1920') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+.dest-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.dest-hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Image Smooth Zoom Interaction */
+.card {
+    overflow: hidden;
+}
+.card img {
+    transition: transform 0.5s ease;
+}
+.card:hover img {
+    transform: scale(1.08);
+}
 
         .navbar{
-    background:#0f172a !important;
-    padding:8px 0;
-}
+            background:#0f172a !important;
+            padding:8px 0;
+        }
 
-.logo{
-    width:200px;
-    height:50px;
-    object-fit:cover;
-}
+        .logo{
+            width:200px;
+            height:50px;
+            object-fit:cover;
+        }
 
-.navbar-brand{
-    color:#38bdf8 !important;
-    font-size:28px;
-    font-weight:bold;
-}
+        .navbar-brand{
+            color:#38bdf8 !important;
+            font-size:28px;
+            font-weight:bold;
+        }
 
-.nav-link{
-    color:white !important;
-    margin-left:15px;
-    font-size:17px;
-    transition:0.3s;
-}
+        .nav-link{
+            color:white !important;
+            margin-left:15px;
+            font-size:17px;
+            transition:0.3s;
+        }
 
-.nav-link:hover{
-    color:#38bdf8 !important;
-}
-
+        .nav-link:hover, .nav-link.active {
+            color:#38bdf8 !important;
+        }
 
         .card {
             transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
         }
 
         .card:hover {
@@ -61,195 +89,204 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-
 <div class="container">
-
     <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="img/logo.svg" class="logo me-2" alt="logo">
-    
     </a>
 
-    <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav">
-
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
-
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-
         <ul class="navbar-nav ms-auto">
-
-            <li class="nav-item">
-                <a class="nav-link active" href="trip.html">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="Trips.html">Trips</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="destination.html">Destinations</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="package.html">Packages</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Trips.html">Trips</a></li>
+            <li class="nav-item"><a class="nav-link active" href="destination.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-
     </div>
-
 </div>
-
 </nav>
+<!-- Hero Banner -->
+<div class="dest-hero mb-5">
+    <div class="container">
+        <h1>Where Do You Want to Go Next?</h1>
+        <p class="lead">Discover breathtaking places and create unforgettable memories around the globe.</p>
+    </div>
+</div>
 
 <!-- Destinations Section -->
 <section class="container my-5">
-    <h2 class="text-center mb-4">Popular Destinations</h2>
+    <h2 class="text-center mb-4 text-dark fw-bold">Popular Destinations</h2>
 
     <div class="row g-4">
 
-        <!-- Destination 1 -->
+        <!-- Destination 1: Paris -->
         <div class="col-md-4">
             <div class="card">
                 <img src="img/paris tour.jpg" class="card-img-top" alt="Paris">
-                <div class="card-body">
-                    <h5 class="card-title">Paris</h5>
-                    <p class="card-text">Explore the city of love, Eiffel Tower and beautiful streets.</p>
-                    <a href="desparis.html" class="btn btn-primary">View Details</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Paris</h5>
+                        <p class="card-text text-muted">Explore the city of love, Eiffel Tower and beautiful streets.</p>
+                    </div>
+                    <a href="details.html?name=Paris&price=₹85,000&desc=Explore%20the%20city%20of%20love%2C%20Eiffel%20Tower%20and%20beautiful%20streets.&img=img/paris%20tour.jpg" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
-        <!-- Destination 2 -->
+        <!-- Destination 2: Maldives -->
         <div class="col-md-4">
             <div class="card">
                 <img src="img/maldives.jpg" class="card-img-top" alt="Maldives">
-                <div class="card-body">
-                    <h5 class="card-title">Maldives</h5>
-                    <p class="card-text">Enjoy crystal clear water, beaches and luxury resorts.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Maldives</h5>
+                        <p class="card-text text-muted">Enjoy crystal clear water, beaches and luxury resorts.</p>
+                    </div>
+                    <a href="details.html?name=Maldives&price=₹1,20,000&desc=Enjoy%20crystal%20clear%20water%2C%20beaches%20and%20luxury%20resorts.&img=img/maldives.jpg" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
-        <!-- Destination 3 -->
+        <!-- Destination 3: Dubai -->
         <div class="col-md-4">
             <div class="card">
                 <img src="img/dubai.jpg" class="card-img-top" alt="Dubai">
-                <div class="card-body">
-                    <h5 class="card-title">Dubai</h5>
-                    <p class="card-text">Experience modern architecture, shopping and desert safari.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Dubai</h5>
+                        <p class="card-text text-muted">Experience modern architecture, shopping and desert safari.</p>
+                    </div>
+                    <a href="details.html?name=Dubai&price=₹45,000&desc=Experience%20modern%20architecture%2C%20shopping%20and%20desert%20safari.&img=img/dubai.jpg" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
-        <!-- Destination 4 -->
+        <!-- Destination 4: Goa -->
         <div class="col-md-4">
             <div class="card">
                 <img src="img/goa_beach.png.jpeg" class="card-img-top" alt="Goa">
-                <div class="card-body">
-                    <h5 class="card-title">Goa</h5>
-                    <p class="card-text">Relax at beaches, enjoy nightlife and seafood.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Goa</h5>
+                        <p class="card-text text-muted">Relax at beaches, enjoy nightlife and seafood.</p>
+                    </div>
+                    <a href="details.html?name=Goa&price=₹30,000&desc=Relax%20at%20beaches%2C%20enjoy%20nightlife%20and%20seafood.&img=img/goa_beach.png.jpeg" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
-        <!-- Destination 5 -->
+        <!-- Destination 5: Switzerland -->
         <div class="col-md-4">
             <div class="card">
                 <img src="img/switzerland.jpg" class="card-img-top" alt="Switzerland">
-                <div class="card-body">
-                    <h5 class="card-title">Switzerland</h5>
-                    <p class="card-text">Snowy mountains, scenic views and peaceful environment.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Switzerland</h5>
+                        <p class="card-text text-muted">Snowy mountains, scenic views and peaceful environment.</p>
+                    </div>
+                    <a href="details.html?name=Switzerland&price=₹50,000&desc=Snowy%20mountains%2C%20scenic%20views%20and%20peaceful%20environment.&img=img/switzerland.jpg" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
-        <!-- Destination 6 -->
+        <!-- Destination 6: Bali -->
         <div class="col-md-4">
             <div class="card">
                 <img src="img/bali.jpg" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">Bali</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Bali</h5>
+                        <p class="card-text text-muted">Beautiful temples, beaches and vibrant culture.</p>
+                    </div>
+                    <a href="details.html?name=Bali&price=₹40,000&desc=Beautiful%20temples%2C%20beaches%20and%20vibrant%20culture.&img=img/bali.jpg" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
+        <!-- Destination 7: Singapore -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://media.istockphoto.com/id/590050726/photo/singapore-glowing-at-night.jpg?s=612x612&w=0&k=20&c=43tSsy1yC0iOAGL3ZVq3-nl84KnmWTnHGI5mwQtp8zo=" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">Singapore</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <img src="https://media.istockphoto.com/id/590050726/photo/singapore-glowing-at-night.jpg?s=612x612&w=0&k=20&c=43tSsy1yC0iOAGL3ZVq3-nl84KnmWTnHGI5mwQtp8zo=" class="card-img-top" alt="Singapore">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Singapore</h5>
+                        <p class="card-text text-muted">Stunning city skylines, clean gardens, and futuristic architecture.</p>
+                    </div>
+                    <a href="details.html?name=Singapore&price=₹55,000&desc=Stunning%20city%20skylines%2C%20clean%20gardens%2C%20and%20futuristic%20architecture.&img=https://media.istockphoto.com/id/590050726/photo/singapore-glowing-at-night.jpg?s=612x612%26w=0%26k=20%26c=43tSsy1yC0iOAGL3ZVq3-nl84KnmWTnHGI5mwQtp8zo=" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
+        <!-- Destination 8: Thailand -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://media.istockphoto.com/id/2149112736/photo/wat-arun-temple-at-sunset-bangkok-in-thailand.jpg?s=612x612&w=0&k=20&c=1JqYAueTVDWfnj8iwCRlS_VIp-3YBeDp6Wp-Pq19qVk=" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">Thailand</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <img src="https://media.istockphoto.com/id/2149112736/photo/wat-arun-temple-at-sunset-bangkok-in-thailand.jpg?s=612x612&w=0&k=20&c=1JqYAueTVDWfnj8iwCRlS_VIp-3YBeDp6Wp-Pq19qVk=" class="card-img-top" alt="Thailand">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Thailand</h5>
+                        <p class="card-text text-muted">Vibrant street markets, historic grand temples, and tropical islands.</p>
+                    </div>
+                    <a href="details.html?name=Thailand&price=₹60,000&desc=Vibrant%20street%20markets%2C%20historic%20grand%20temples%2C%20and%20tropical%20islands.&img=https://media.istockphoto.com/id/2149112736/photo/wat-arun-temple-at-sunset-bangkok-in-thailand.jpg?s=612x612%26w=0%26k=20%26c=1JqYAueTVDWfnj8iwCRlS_VIp-3YBeDp6Wp-Pq19qVk=" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
+        <!-- Destination 9: Jaipur -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://media.istockphoto.com/id/1135820309/photo/amber-fort-and-maota-lake-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=raUKDB1Mris9Z7SjvuuTieZRzF2-CaKukGvTC8t1kuo=" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">Jaipur</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <img src="https://media.istockphoto.com/id/1135820309/photo/amber-fort-and-maota-lake-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=raUKDB1Mris9Z7SjvuuTieZRzF2-CaKukGvTC8t1kuo=" class="card-img-top" alt="Jaipur">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Jaipur</h5>
+                        <p class="card-text text-muted">Explore royal palaces, heritage forts, and India's Pink City.</p>
+                    </div>
+                    <a href="details.html?name=Jaipur&price=₹20,000&desc=Explore%20royal%20palaces%2C%20heritage%20forts%2C%20and%20India%27s%20Pink%20City.&img=https://media.istockphoto.com/id/1135820309/photo/amber-fort-and-maota-lake-jaipur-rajasthan-india.jpg?s=612x612%26w=0%26k=20%26c=raUKDB1Mris9Z7SjvuuTieZRzF2-CaKukGvTC8t1kuo=" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
+        <!-- Destination 10: Ladakh -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFkYWtofGVufDB8fDB8fHww" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">Ladakh</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <img src="https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFkYWtofGVufDB8fDB8fHww" class="card-img-top" alt="Ladakh">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">Ladakh</h5>
+                        <p class="card-text text-muted">Breathtaking high-altitude lakes, mountain passes, and serene monasteries.</p>
+                    </div>
+                    <a href="details.html?name=Ladakh&price=₹28,000&desc=Breathtaking%20high-altitude%20lakes%2C%20mountain%20passes%2C%20and%20serene%20monasteries.&img=https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?fm=jpg%26q=60%26w=3000%26auto=format%26fit=crop%26ixlib=rb-4.1.0%26ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFkYWtofGVufDB8fDB8fHww" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
+        <!-- Destination 11: London -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://media.istockphoto.com/id/1265900812/photo/aerial-view-of-london-and-the-tower-bridge.jpg?s=612x612&w=0&k=20&c=-2j6QgZyeveMcGzuWmgLYqC7zXTkcSBnayuZsDqs5KQ=" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">London</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <img src="https://media.istockphoto.com/id/1265900812/photo/aerial-view-of-london-and-the-tower-bridge.jpg?s=612x612&w=0&k=20&c=-2j6QgZyeveMcGzuWmgLYqC7zXTkcSBnayuZsDqs5KQ=" class="card-img-top" alt="London">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">London</h5>
+                        <p class="card-text text-muted">Walk along historic streets, iconic monuments, and cultural museums.</p>
+                    </div>
+                    <a href="details.html?name=London&price=₹75,000&desc=Walk%20along%20historic%20streets%2C%20iconic%20monuments%2C%20and%20cultural%20museums.&img=https://media.istockphoto.com/id/1265900812/photo/aerial-view-of-london-and-the-tower-bridge.jpg?s=612x612&w=0&k=20&c=-2j6QgZyeveMcGzuWmgLYqC7zXTkcSBnayuZsDqs5KQ=" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
 
+        <!-- Destination 12: New York -->
         <div class="col-md-4">
             <div class="card">
-                <img src="https://media.istockphoto.com/id/521714583/photo/new-york-city-midtown-with-empire-state-building-at-sunset.jpg?s=612x612&w=0&k=20&c=paLoZfZnaZSfaBK_DxLls_Ii0hD3r2PBKSlS6M1QxVU=" class="card-img-top" alt="Bali">
-                <div class="card-body">
-                    <h5 class="card-title">NewYork</h5>
-                    <p class="card-text">Beautiful temples, beaches and vibrant culture.</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                <img src="https://media.istockphoto.com/id/521714583/photo/new-york-city-midtown-with-empire-state-building-at-sunset.jpg?s=612x612&w=0&k=20&c=paLoZfZnaZSfaBK_DxLls_Ii0hD3r2PBKSlS6M1QxVU=" class="card-img-top" alt="New York">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold">New York</h5>
+                        <p class="card-text text-muted">The hustle of Times Square, high-energy cityscape, and central park.</p>
+                    </div>
+                    <a href="details.html?name=New%20York&price=₹90,000&desc=The%20hustle%20of%20Times%20Square%2C%20high-energy%20cityscape%2C%20and%20central%20park.&img=https://media.istockphoto.com/id/521714583/photo/new-york-city-midtown-with-empire-state-building-at-sunset.jpg?s=612x612&w=0&k=20&c=paLoZfZnaZSfaBK_DxLls_Ii0hD3r2PBKSlS6M1QxVU=" class="btn btn-primary w-100 mt-2">View Details</a>
                 </div>
             </div>
         </div>
@@ -257,9 +294,16 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p>© 2026 TravelWorld | All Rights Reserved</p>
+<!-- Footer with Creator Attribution -->
+<footer class="text-center text-white py-4" style="background:#0f172a;">
+    <div class="container">
+        <p class="mb-1">© 2026 Travel Explorer | All Rights Reserved</p>
+        <p class="mb-0 text-muted fs-7">
+            Designed & Developed with ❤️ by 
+            <span class="text-info fw-semibold">Sumedha</span> & 
+            <span class="text-info fw-semibold">Sakshi Chauhan</span>
+        </p>
+    </div>
 </footer>
 
 <!-- Bootstrap JS -->
